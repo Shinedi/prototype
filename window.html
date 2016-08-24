@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        function createperson(name,age) { //构造函数
+
+            //var obj = new Object();
+
+            this.name = name;
+            this.age = age;
+
+            this.sayName = function () {
+                return this.name;
+            };
+
+            this.sayAge = function () {
+                return this.age;
+            };
+        };
+
+
+        var p1= new createperson('wwww',30);
+
+        alert(p1.sayName());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

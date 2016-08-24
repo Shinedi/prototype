@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+  function createperson(name,age){  //设计模式  工厂模式
+
+        var obj=new Object(); // 原料
+
+
+        obj.name=name;
+        obj.age=age;
+
+        obj.sayName=function()
+        {
+            alert(this.name);
+        };
+
+        obj.sayAge=function()
+        {
+            alert(this.age);
+        };
+
+        // 加工
+
+        return obj;  //产品
+
+  };
+        var p1=createperson('www',20);
+        var p2=createperson('hello',30);
+
+        p1.sayName();
+
+        p2.sayAge();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

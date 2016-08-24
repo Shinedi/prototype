@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+//        function person()
+//        {
+//
+//        }
+//
+//        var arr=[];
+//
+//        var name="abc";
+//        var age=20;
+//
+//        arr.name="abc";
+//        arr.age=20;
+//
+//        arr.push= function () {
+//
+//        }
+//   this代表当前对象   this 就是指这个方法属性谁，this 就是谁。
+
+    var obj=new Object();
+
+    obj.name="wwwwww";
+    obj.age=20;
+
+    obj.sayName=function()
+    {
+        alert(this.name);
+    };
+
+    obj.sayAge=function()
+    {
+        alert(this.age);
+    };
+
+    obj.sayName();
+    obj.sayAge();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
